@@ -105,6 +105,8 @@ let g:snips_author = 'Sherlock Ren <sherlock_ren@icloud.com>'
 let g:snips_name = 'Sherlock Ren'
 let g:snips_email = '<sherlock_ren@icloud.com>'
 let g:snips_github = 'https://github.com/SherlockRen'
+let g:lucius_style = 'dark'
+
 if &term =~? 'mlterm\|xterm\|xterm-256\|screen-256'
     let &t_Co = 256
     " color
@@ -129,7 +131,7 @@ let mapleader = ","
 " Open :GoDeclsDir with ctrl-g
 nmap <C-g> :GoDeclsDir<cr>
 imap <C-g> <esc>:<C-u>GoDeclsDir<cr>
-imap <Space> <C-x><C-o>
+imap <Right> <C-x><C-o>
 map <C-n> :cnext<CR>
 map <C-m> :cprevious<CR>
 nnoremap <leader>a :cclose<CR>
